@@ -27,10 +27,10 @@
                             <input type="text" id="fName" name="firstName">
 
                             <label for="eAddress">EMAIL ADDRESS</label>
-                            <input type="email" id="eAddress" name="emailAddress">
+                            <input type="email" id="eAddress" name="emailAddress" pattern="/^\S+@\S+\.\S+$/\" required>
 
                             <label for="aPassword">PASSWORD</label>
-                            <input type="password" id="aPassword" name="passwordA">
+                            <input type="password" id="aPassword" name="passwordA" pattern="^[A-Za-z]{8,}$" required>
                         </div>
 
                         <div>
@@ -41,7 +41,7 @@
                             <input type="tel" id="pNumber" name="phoneNumber">
 
                             <label for="bPassword">CONFIRM PASSWORD</label>
-                            <input type="password" id="bPassword" name="passwordB">
+                            <input type="password" id="bPassword" name="passwordB" pattern="^[A-Za-z]{8,}$" required>
                         </div>
                     </form>
                 </div>

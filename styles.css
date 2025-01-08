@@ -107,12 +107,10 @@ div {
 .cta-container p {
     font-family: 'open_sansregular';
     font-size: 1.1rem;
-    /* font-weight: 600; */
 }
 
 form {
     display: flex;
-    /* justify-content: space-between; */
     gap: 64px;
 }
 
@@ -137,12 +135,27 @@ label {
     color: #444444
 }
 
-input {
+label + input {
     border-radius: 4px;
     border: solid 1px rgb(221, 221, 221);
     height: 1.5rem;
     width: 220px;
 }
+
+label + input:invalid {
+    outline: solid 1px #bd1414;
+}
+
+label + input:valid {
+    outline: solid 1px #10aa02;
+}
+
+label + input:focus {
+    outline: solid 1px #7b96e0;
+    box-shadow: var(--shadow-elevation-low);
+    background-color: white;
+}
+
 
 p > span {
     color: #413b91;
