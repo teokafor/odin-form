@@ -15,6 +15,11 @@
 
 }
 
+@font-face {
+    font-family: 'nord';
+    src: url('Media/Norse-Bold.otf');
+  }
+
 :root {
     --shadow-color: 210deg 14% 41%;
     --shadow-elevation-low:
@@ -27,10 +32,6 @@
       -0.1px 6.1px 7.7px -1.1px hsl(var(--shadow-color) / 0.46),
       -0.2px 13.9px 17.5px -1.6px hsl(var(--shadow-color) / 0.54);
   }
-
-div {
-    /* border: solid 1px; */
-}
 
 .main-container {
     height: 854px;
@@ -46,6 +47,30 @@ div {
     background-image: url('/Media/benjamin-chambon-lyAerJAmHI8-unsplash.jpg');
     background-size: cover;
     background-position-x: 100%;
+    justify-content: space-between;
+}
+
+.hero {
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.705);
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+}
+.hero > img {
+    object-fit: scale-down;
+    width: 100px;
+}
+.hero > p {
+    color: white;
+    font-size: 5rem;
+    font-family: 'nord';
+    align-self: center;
+}
+
+.copyright {
+    align-self: center;
+    margin: 0;
 }
 
 .right-container {
@@ -144,10 +169,6 @@ label + input {
 
 label + input:invalid {
     outline: solid 1px #bd1414;
-}
-
-label + input:valid {
-    outline: solid 1px #10aa02;
 }
 
 label + input:focus {
