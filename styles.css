@@ -1,0 +1,39 @@
+div {
+    border: solid 1px;
+}
+
+.main-container {
+    height: 854px;
+    width: 1280px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.left-container {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-container {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-text-container {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+.form-container {
+    flex-basis: 250px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.cta-container {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
