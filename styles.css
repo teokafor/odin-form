@@ -44,7 +44,7 @@ div {
 .intro-text-container {
     flex-grow: 1;
     flex-basis: 250px;
-    padding: 100px 48px 0 48px;
+    padding: 100px 0 0 48px;
     margin-bottom: 25px;
     
     border: none;
@@ -65,7 +65,7 @@ div {
 .cta-container {
     flex-grow: 1;
     flex-basis: 300px;
-    padding: 0 48px 100px 48px;
+    padding: 0 0 100px 48px;
     margin-top: 50px;
 
     border: none;
